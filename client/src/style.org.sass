@@ -1,0 +1,95 @@
+
+@import "~bootstrap/scss/bootstrap"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+#root
+  height: 100vh
+  width: 100vw
+
+$dark-seashell: darken(seashell, 4)
+$darker-seashell: darken(seashell, 10)
+
+.App
+  width: 100%
+  height: 100%
+  position: relative
+
+  .header
+    width: 100%
+    height: 20%
+    background: linear-gradient($dark-seashell, $darker-seashell)
+    position: absolute
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.25)
+
+    .title
+      font-family: $font-family-sans-serif
+      font-size: 2.5em
+      line-height: 1em
+      margin-top: 5vh
+      margin-left: 5vw
+      color: #333
+
+  .content
+    width: 100%
+    height: 100%
+    position: absolute
+
+    .box
+      width: 90%
+      height: 80vh
+      margin: 15vh auto 0
+      border-radius: 10px
+      border: 5px solid seashell
+      background-color: white
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4)
+      display: grid
+
+.ArticleList
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: stretch
+
+.Barcode
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.ArticleRow
+  width: 100%
+  height: 4em
+  display: grid
+  grid-template-columns: repeat(4, 2fr) 1fr
+  border-bottom: 1px lightgrey solid
+
+  &:nth-child(odd)
+    background-color: #f9f9f9
+
+  &:hover
+    background: #f0f0f0
+
+.TextField
+  display: flex
+  justify-content: center
+  align-items: center
+
+  input
+    width: 100%
+    background-color: rgba(0,0,0,0)
+    border: none
+    outline: none
+    text-align: center
+
+.DropDownList
+  width: 18.75%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 auto
