@@ -59,7 +59,7 @@
   "proxy": "http://localhost:8080",
   "devDependencies": {
     "babel-preset-react-app": "^3.1.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "sass-loader": "^6.0.7"
   },
   "jest": {
