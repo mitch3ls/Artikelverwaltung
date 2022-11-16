@@ -21,7 +21,7 @@
     "babel-loader": "^7.1.4",
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.2.1",
-    "html-webpack-plugin": "^3.0.6",
+    "html-webpack-plugin": "^5.5.0",
     "npm-run": "^4.1.2",
     "webpack": "^4.1.1"
   }
